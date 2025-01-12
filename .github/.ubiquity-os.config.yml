@@ -1,14 +1,7 @@
 plugins:
-  - skipBotEvents: true
   - uses:
     # hello-world-plugin
     - plugin: http://127.0.0.1:9090
       runsOn: [ "issue_comment.created" ]
       with:
         response: world
-  - uses:
-    - plugin: http://localhost:4002
-      id: command-wallet
-      runsOn: [ "issue_comment.created" ]
-      with:
-        registerWalletWithVerification: false
