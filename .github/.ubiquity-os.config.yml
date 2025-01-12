@@ -6,7 +6,7 @@ plugins:
       with:
         response: world
   - uses:
-    - plugin: http://localhost:4002
+    - plugin: https://ubiquity-os-command-wallet-development.ubiquity.workers.dev
       id: command-wallet
       with:
         registerWalletWithVerification: false
