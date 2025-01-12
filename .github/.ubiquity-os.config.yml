@@ -9,5 +9,6 @@ plugins:
 
       - plugin: http://localhost:4002
         id: command-wallet
+        runsOn: [ "issue_comment.created" ]
         with:
           registerWalletWithVerification: false
