@@ -1,30 +1,8 @@
 plugins:
   - uses:
-    # hello-world-plugin
-    - plugin: http://127.0.0.1:9090
-      runsOn: [ "issue_comment.created" ]
+    - plugin: http://localhost:4004
       with:
-        response: world
-  - uses:
-    - plugin: http://localhost:4002
-      runsOn: [ "issue_comment.created" ]
-      id: command-wallet
-      with:
-        registerWalletWithVerification: false
-  - uses:
-    - plugin: https://ubiquity-os-command-start-stop-main.ubiquity.workers.dev
-      runsOn: [ "issue_comment.created" ]
-      with:
-        reviewDelayTolerance: "3 Days"
-        taskStaleTimeoutDuration: "30 Days"
-        startRequiresWallet: true # default is true
-        requiredLabelsToStart:
-          - name: "Priority: 1 (Normal)"
-          - name: "Priority: 2 (Medium)"
-          - name: "Priority: 3 (High)"
-            roles: ['collaborator', 'admin']
-          - name: "Priority: 4 (Urgent)"
-            roles: ['collaborator', 'admin']
-          - name: "Priority: 5 (Emergency)"
-            roles: ['collaborator', 'admin']
+        matchThreshold: 0.95
+        warningThreshold: 0.75
+        jobMatchingThreshold: 0.75
   
