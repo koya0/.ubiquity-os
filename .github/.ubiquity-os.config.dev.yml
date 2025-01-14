@@ -6,5 +6,5 @@ plugins:
         warningThreshold: 0.75
         jobMatchingThreshold: 0.75
   - uses:
-      - plugin: https://ubiquity-os-command-wallet-main.ubiquity.workers.dev
+      - plugin: http://localhost:4002
   
