@@ -9,4 +9,14 @@ plugins:
       - plugin: http://localhost:4002
   - uses:
       - plugin: http://localhost:4000
+        with:
+          requiredLabelsToStart:
+            - name: "Priority: 1 (Normal)"
+            - name: "Priority: 2 (Medium)"
+            - name: "Priority: 3 (High)"
+              roles: ['collaborator', 'admin']
+            - name: "Priority: 4 (Urgent)"
+              roles: ['collaborator', 'admin']
+            - name: "Priority: 5 (Emergency)"
+              roles: ['collaborator', 'admin']
   
