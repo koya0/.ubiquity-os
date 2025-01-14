@@ -7,4 +7,6 @@ plugins:
         jobMatchingThreshold: 0.75
   - uses:
       - plugin: http://localhost:4002
+  - uses:
+      - plugin: http://localhost:4000
   
