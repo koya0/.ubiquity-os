@@ -19,4 +19,6 @@ plugins:
               roles: ['collaborator', 'admin']
             - name: "Priority: 5 (Emergency)"
               roles: ['collaborator', 'admin']
+  - uses:
+      - plugin: http://localhost:4005
   
