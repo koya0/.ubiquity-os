@@ -1,7 +1,7 @@
 import { handleRouting, setupRouter } from "./router";
 import { initializeState } from "./on-load";
 
-setupRouter();
+setupRouter(); // test
 
 export async function mainModule() {
   try {
